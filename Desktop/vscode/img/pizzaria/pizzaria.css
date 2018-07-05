@@ -1,0 +1,267 @@
+*{
+    /* espaçamento interno nulo*/
+    padding: 0%;
+    /*retirada geral das margens do site*/
+    margin: 0%;
+    /* grupo de fontes usados nas paginas*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* utilizado para fazer mudanças gerais no corpo do site*/
+body{
+    /* cor de fundo do corpo */
+    background: #E6F8E0;
+}
+/* mudanças gerais no cabeçalho */
+header{
+    /* cor de fundo do cabeçalho*/
+    background: linear-gradient(#088A08,#DF0101);
+}
+/* mudanças gerais no rodapé*/
+footer{
+    /* cor de fundo do rodapé*/
+    background: linear-gradient(#088A08,#DF0101);
+    /* cor da fonte do rodapé*/
+    color: #EEE;
+}
+/* mudanças no titulo 1 do assunto principal*/
+main h1{
+    /* cor da fonte do titulo 1*/
+    color: #DF0101;
+}
+/* mudanças nos paragráfos do assunto principal*/
+main p{
+    /* tamanho das fontes dos paragrafos do assunto principal*/
+    font-size: 20px;
+}
+/* id para navegação entre os sites*/
+#nav_horizontal{
+    /* grupo de fontes usados no nav*/
+    font-family: Arial, Helvetica, sans-serif;
+    /* tamanho das fontes usados no nav*/
+    font-size: 20px;
+}
+/* id direcionado a lista do nav*/
+#nav_horizontal ul{
+    /* Retirar estilo da lista (topicos)*/
+    list-style: none; 
+    /* margens da lista*/
+    margin: 10px;
+    /* espaçamento interno nulo*/
+    padding: 0;
+    
+}
+/* id usado para a lista de navegção*/
+#nav_horizontal ul li{
+    /* Menu ficar horizontal */
+    display: inline-block; /* Menu ficar horizontal */
+}
+/* id usado para os links da lista de navegação*/
+#nav_horizontal ul li a{
+    /* Formato de botão do link */
+    display: block; 
+    /* Cor do texto*/
+    color: #fff; 
+    /* Alinhamento centralizado do botão*/
+    text-align: center; 
+    /* Espaçamento interno do botão*/
+    padding: 15px 20px; 
+    /* Sem o sublinhado do link*/
+    text-decoration: none; 
+}
+/* Quando o mouse passar pelo botão*/
+#nav_horizontal ul li a:hover{
+    /* cor de fundo quando passar o botão do mouse pelo botão*/
+    background-color: #088A08; 
+}
+/* Quando clicar sobre o botão*/
+#nav_horizontal ul li a:active{
+    /* cor de fundo quando clicar pelo botão*/
+    background-color: #EEE;
+    /* cor da fonte quando clicado*/
+    color: #333;
+}
+/* id usado para dividir a tela em colunas*/
+#site{
+    /* Definimos a largura da página */
+    width:1000px;
+    /* Definirmos a altura da página*/
+    height:800px;
+    /* Aqui definiremos a posição que a página ocupará na tela, nesse caso estamos definindo que fique centralizado na tela*/
+    /*top : posição de cima */
+    margin-top:0;
+    /*bottom : posição de baixo */
+    margin-bottom:0;
+}
+
+#conteudo{
+    /*Novamente definimos a largura da div*/
+    width:1000px;
+    /* altura da div */
+    height:500px; 
+}
+/* id usado para coluna esquerda*/
+#conteudo-left{
+  margin-left: 50px;
+  /*Novamente definimos a largura da div*/
+  width:200px;
+  /* altura da div */
+  height:200px;
+  /* O atributo Float é utilizado para fazermos o nosso bloco(div) 
+  literalmente flutue e se posicione onde queremos na página, quando escolhemos left, 
+  dizemos que esse bloco irá se posicionar na parte esquerda da página */
+  float:left;
+  }
+  /* id usado para coluna direita*/
+#conteudo-right{
+  margin-left: 30px;
+  /*Novamente definimos a largura da div*/
+  width:600px;
+  /* altura da div */
+  height:400px;
+  /* Pode parecer meio estranho usarmos o mesmo atributo left para o bloco em que queremos posicionar na direita, 
+  mas como sabemos, o CSS é um estilo em cascata, nossa div conteúdo definimos a largura de 1000px e na conteudo-left 500px, 
+automaticamente ao definirmos o conteudo-right com 500px e à esquerda também, ele ficou à direita do conteudo-left, 
+pois o máximo que a div filha poderá ter é 1000px, sendo 500+500=1000px */
+  float: left;
+}
+/*id usado para coluna esquerda*/
+#conteudo-1 {
+     /* O atributo Float é utilizado para fazermos o nosso bloco(div) 
+     literalmente flutue e se posicione onde queremos na página, quando escolhemos left, 
+     dizemos que esse bloco irá se posicionar na parte esquerda da página */
+    float:left;
+    /*Novamente definimos a largura da div*/
+    width:35%;
+}
+/* id usado para criar a coluna central e direita*/
+#conteudo-2 {
+     /* O atributo Float é utilizado para fazermos o nosso bloco(div) 
+     literalmente flutue e se posicione onde queremos na página, quando escolhemos left, 
+     dizemos que esse bloco irá se posicionar na parte esquerda da página */
+    float:right;
+    /*Novamente definimos a largura da div*/
+    width:65%;
+}
+#conteudo-2-1 {
+     /* O atributo Float é utilizado para fazermos o nosso bloco(div) 
+     literalmente flutue e se posicione onde queremos na página, quando escolhemos left, 
+     dizemos que esse bloco irá se posicionar na parte esquerda da página */
+    float:left;
+    /*Novamente definimos a largura da div*/
+    width:50%;
+}
+#conteudo-2-2 {
+     /* O atributo Float é utilizado para fazermos o nosso bloco(div) 
+     literalmente flutue e se posicione onde queremos na página, quando escolhemos left, 
+     dizemos que esse bloco irá se posicionar na parte esquerda da página */
+    float: left;
+    /*Novamente definimos a largura da div*/
+    width:50%;
+}
+/* classes usadas para fonte*/
+.fonte{
+    /* tamanho da fonte*/
+    font-size: 30px;
+}
+/* classes usadas para fonte*/
+.fonte2{
+    /* tamanho da fonte*/
+    font-size: 50px;
+}
+/* classe usada para alinha textos*/
+.alinhamento{
+    /* alinhamento do texto em central*/
+    text-align: center;
+}
+/* classe usada para alinha objetos*/
+.alinhamento2{
+    /* margen esquerda*/
+   margin-left: 800px;
+}
+/* classe usada para alinha objetos*/
+.alinhamento3{
+    /* margen esquerda*/
+    margin-left: 700px;
+ }
+ /* caixa de 250 por 250 pixeis*/
+.caixa_250_250{
+    /* largura da caixa*/
+    width: 250px;
+    /* altura da caixa*/
+    height: 250px;
+}
+/* caixa de 350 por 250 pixeis*/
+.caixa_350_250{
+    /* largura da caixa*/
+    width: 350px;
+    /* altura da caixa*/
+    height: 200px;
+}
+/* caixa de 600 por 450 pixeis*/
+.caixa_600_450{
+    /* largura da caixa*/
+    width: 600px;
+    /* altura da caixa*/
+    height: 450px;
+}
+/* caixa de 600 por 50 pixeis*/
+.caixa_600_50{
+    /* largura da caixa*/
+    width: 600px;
+    /* altura da caixa*/
+    height: 50px;
+}
+/* caixa de 600 por 250 pixeis*/
+.caixa_600_250{
+    /* largura da caixa*/
+    width: 600px;
+    /* altura da caixa*/
+    height: 250px;
+}
+/* caixa de 100 por 400 pixeis*/
+.caixa_100_400{
+    /* largura da caixa*/
+    width: 100%;
+    /* altura da caixa*/
+    height: 400px;
+}
+/* classe pra cor de fundo*/
+.fundo{
+    /* cor de fundo*/
+    background: #088A08;
+}
+/* classe pra cor da fonte*/
+.cor{
+    /* cor da fonte*/
+    color: #EEE;
+}
+/*classe para margen esquerda*/
+.margen_e{
+    /* margen esquerda*/
+    margin-left: 20px;
+}
+/* classe para margen direita*/
+.margen-d{
+    /* margen direita*/
+    margin-right: 20px;
+}
+/* classe para margen de cima*/
+.margen_t{
+    /* margen superior*/
+    margin-top: 50px;
+}
+/* classe para margen de cima*/
+.margen_t2{
+    /* margen superior*/
+    margin-top: 70px;
+}
+/* classe para margen de cima*/
+.margen_t3{
+    /* margen superior*/
+    margin-top: 100px;
+}
+/* classe para margen inferior*/
+.margen-b{
+    /* margen inferior*/
+    margin-bottom: 100px;
+}
